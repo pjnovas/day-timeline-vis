@@ -1,0 +1,14 @@
+default:
+  - 'sass'
+  - 'browserify:app'
+
+w:
+  - 'browserify:watch'
+  - 'connect:app'
+  - 'watch:app'
+
+min:
+  - 'sass'
+  - 'browserify:app'
+  - 'uglify:all'
+  - 'cssmin:all'

@@ -1,0 +1,28 @@
+@import "../node_modules/susy/sass/susy";
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,700,300");
+
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: 1/4, // The size of a gutter in relation to a single column
+  gutter-position: inside,
+  //debug: (image: show) // shows the susy grid for debug
+);
+
+html, body {
+  height:100%;
+}
+
+$container-style: fluid;
+
+@import "settings.scss";
+
+body {
+  color: $color-font-light;
+  background-color: $color-bg-dark;
+
+  font-family: $font-family !important;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+@import "./components/index.scss";
